@@ -27,7 +27,7 @@ $timerEnd=time();
 $timeDelta = $timerEnd - $timerStart;
 
 header('Content-type: image/jpeg');
-header("Stats-MsElapsed: $timeDelta");
+header("Stats-SecondsElapsed: $timeDelta");
 header("Stats-UnixTsStart: $timerStart");
 header("Stats-UnixTsEnd: $timerEnd");
 foreach($_REQUEST['param'] as $idx => $param) {
